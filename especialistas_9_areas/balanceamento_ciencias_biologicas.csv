@@ -1,0 +1,5 @@
+﻿classe_id,quantidade_antes,quantidade_depois,quantidade_descartada,alvo_balanceamento,classe
+0,24423,7522,16901,7522,BIODIVERSIDADE
+1,14720,7522,7198,7522,CIÊNCIAS BIOLÓGICAS I
+2,15845,7522,8323,7522,CIÊNCIAS BIOLÓGICAS II
+3,7522,7522,0,7522,CIÊNCIAS BIOLÓGICAS III

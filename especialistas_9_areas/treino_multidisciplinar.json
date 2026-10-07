@@ -1,0 +1,48 @@
+{
+  "nome": "multidisciplinar",
+  "classes": [
+    "BIOTECNOLOGIA",
+    "CIÊNCIAS AMBIENTAIS",
+    "ENSINO",
+    "INTERDISCIPLINAR",
+    "MATERIAIS"
+  ],
+  "n_documentos": 140743,
+  "n_documentos_original": 140743,
+  "n_documentos_balanceados": 31900,
+  "n_treino": 22330,
+  "n_validacao": 4785,
+  "n_teste": 4785,
+  "balanceamento": {
+    "metodo": "undersampling_aleatorio",
+    "aplicado_antes_do_split": true,
+    "quantidade_alvo_por_classe": 6380
+  },
+  "n_features": 2066,
+  "accuracy": 0.7011494252873564,
+  "balanced_accuracy": 0.7011494252873562,
+  "f1_macro": 0.6955118870283747,
+  "f1_weighted": 0.6955118870283749,
+  "best_iteration": 499,
+  "best_score": 0.7883650223365202,
+  "segundos_treino": 5.74,
+  "params": {
+    "objective": "multi:softprob",
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "gamma": 0.0,
+    "max_bin": 256,
+    "tree_method": "hist",
+    "device": "cuda",
+    "eval_metric": "mlogloss",
+    "random_state": 42,
+    "early_stopping_rounds": 50,
+    "num_class": 5
+  }
+}

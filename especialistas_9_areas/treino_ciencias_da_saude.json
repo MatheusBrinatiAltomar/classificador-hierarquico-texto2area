@@ -1,0 +1,52 @@
+{
+  "nome": "ciencias_da_saude",
+  "classes": [
+    "EDUCAÇÃO FÍSICA",
+    "ENFERMAGEM",
+    "FARMÁCIA",
+    "MEDICINA I",
+    "MEDICINA II",
+    "MEDICINA III",
+    "NUTRIÇÃO",
+    "ODONTOLOGIA",
+    "SAÚDE COLETIVA"
+  ],
+  "n_documentos": 154744,
+  "n_documentos_original": 154744,
+  "n_documentos_balanceados": 48816,
+  "n_treino": 34171,
+  "n_validacao": 7322,
+  "n_teste": 7323,
+  "balanceamento": {
+    "metodo": "undersampling_aleatorio",
+    "aplicado_antes_do_split": true,
+    "quantidade_alvo_por_classe": 5424
+  },
+  "n_features": 2066,
+  "accuracy": 0.4719377304383449,
+  "balanced_accuracy": 0.47198674689449605,
+  "f1_macro": 0.4633774544045541,
+  "f1_weighted": 0.46332491940655957,
+  "best_iteration": 499,
+  "best_score": 1.4906305097988193,
+  "segundos_treino": 10.268,
+  "params": {
+    "objective": "multi:softprob",
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.0,
+    "reg_lambda": 1.0,
+    "gamma": 0.0,
+    "max_bin": 256,
+    "tree_method": "hist",
+    "device": "cuda",
+    "eval_metric": "mlogloss",
+    "random_state": 42,
+    "early_stopping_rounds": 50,
+    "num_class": 9
+  }
+}

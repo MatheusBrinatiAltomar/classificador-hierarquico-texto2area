@@ -1,0 +1,123 @@
+{
+  "seed": 42,
+  "corpus": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\dados\\corpus_td_lemas.parquet",
+  "texto2area_model": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\texto2area\\data\\modelo.joblib",
+  "texto2area_vectorizer": "C:\\Users\\Mthaltomar\\Desktop\\Mestrado\\Projeto\\texto2area\\texto2area\\texto2area\\data\\vetorizador.joblib",
+  "features": {
+    "margens": 9,
+    "one_hot_grande_area": 9,
+    "top_termos": 5,
+    "hash_features": 2048
+  },
+  "balanceamento": {
+    "metodo": "undersampling_aleatorio",
+    "antes_do_split": true,
+    "ativo": true
+  },
+  "xgboost": {
+    "device": "cuda",
+    "tree_method": "hist",
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "max_bin": 256,
+    "early_stopping_rounds": 50
+  },
+  "ciencias_agrarias": {
+    "grande_area": "CIÊNCIAS AGRÁRIAS",
+    "classes": [
+      "CIÊNCIA DE ALIMENTOS",
+      "CIÊNCIAS AGRÁRIAS I",
+      "MEDICINA VETERINÁRIA",
+      "ZOOTECNIA / RECURSOS PESQUEIROS"
+    ]
+  },
+  "ciencias_biologicas": {
+    "grande_area": "CIÊNCIAS BIOLÓGICAS",
+    "classes": [
+      "BIODIVERSIDADE",
+      "CIÊNCIAS BIOLÓGICAS I",
+      "CIÊNCIAS BIOLÓGICAS II",
+      "CIÊNCIAS BIOLÓGICAS III"
+    ]
+  },
+  "ciencias_da_saude": {
+    "grande_area": "CIÊNCIAS DA SAÚDE",
+    "classes": [
+      "EDUCAÇÃO FÍSICA",
+      "ENFERMAGEM",
+      "FARMÁCIA",
+      "MEDICINA I",
+      "MEDICINA II",
+      "MEDICINA III",
+      "NUTRIÇÃO",
+      "ODONTOLOGIA",
+      "SAÚDE COLETIVA"
+    ]
+  },
+  "ciencias_exatas_e_da_terra": {
+    "grande_area": "CIÊNCIAS EXATAS E DA TERRA",
+    "classes": [
+      "ASTRONOMIA / FÍSICA",
+      "CIÊNCIA DA COMPUTAÇÃO",
+      "GEOCIÊNCIAS",
+      "MATEMÁTICA / PROBABILIDADE E ESTATÍSTICA",
+      "QUÍMICA"
+    ]
+  },
+  "ciencias_humanas": {
+    "grande_area": "CIÊNCIAS HUMANAS",
+    "classes": [
+      "ANTROPOLOGIA / ARQUEOLOGIA",
+      "CIÊNCIA POLÍTICA E RELAÇÕES INTERNACIONAIS",
+      "CIÊNCIAS DA RELIGIÃO E TEOLOGIA",
+      "EDUCAÇÃO",
+      "FILOSOFIA",
+      "GEOGRAFIA",
+      "HISTÓRIA",
+      "PSICOLOGIA",
+      "SOCIOLOGIA"
+    ]
+  },
+  "ciencias_sociais_aplicadas": {
+    "grande_area": "CIÊNCIAS SOCIAIS APLICADAS",
+    "classes": [
+      "ADMINISTRAÇÃO PÚBLICA E DE EMPRESAS, CIÊNCIAS CONTÁBEIS E TURISMO",
+      "ARQUITETURA, URBANISMO E DESIGN",
+      "COMUNICAÇÃO E INFORMAÇÃO",
+      "DIREITO",
+      "ECONOMIA",
+      "PLANEJAMENTO URBANO E REGIONAL / DEMOGRAFIA",
+      "SERVIÇO SOCIAL"
+    ]
+  },
+  "engenharias": {
+    "grande_area": "ENGENHARIAS",
+    "classes": [
+      "ENGENHARIAS I",
+      "ENGENHARIAS II",
+      "ENGENHARIAS III",
+      "ENGENHARIAS IV"
+    ]
+  },
+  "linguistica_letras_artes": {
+    "grande_area": "LINGUÍSTICA, LETRAS E ARTES",
+    "classes": [
+      "ARTES",
+      "LINGUÍSTICA E LITERATURA"
+    ]
+  },
+  "multidisciplinar": {
+    "grande_area": "MULTIDISCIPLINAR",
+    "classes": [
+      "BIOTECNOLOGIA",
+      "CIÊNCIAS AMBIENTAIS",
+      "ENSINO",
+      "INTERDISCIPLINAR",
+      "MATERIAIS"
+    ]
+  }
+}
